@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Akira;
+    src: url('../Akira.otf');
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    background-color: #60b2fc;
+}

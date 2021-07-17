@@ -1,0 +1,88 @@
+@media only screen and (max-width:1024px) {
+.navbar{
+    width: 100vw;
+}
+.nav-list{
+    width: 100%;
+}
+.nav-list li{
+    display: none;
+}
+.logo{
+    width: auto;
+    margin: auto;
+}
+.lft{
+    height: 26vh;
+    width: auto;
+    position: absolute;
+    margin: auto;
+    top: 12vh;
+    right: 0;
+    left: 0;
+}
+.rgt{
+    height: 26vh;
+    width: auto;
+    position: absolute;
+    margin: auto;
+    top: 64vh;
+    right: 0;
+    left: 0;
+}
+.links{
+    display: none;
+}
+.policies {
+    display: none;
+}
+.footercontainer{
+    width: 100vw;
+    justify-content: space-evenly;
+}
+.registertext {
+    font-size: 6vw;
+}
+.registersubtext {
+    font-size: 2vw;
+}
+.abtimages{
+    width: 40vw;
+    height: auto;
+    margin: 2vw;
+}
+.abouttext {
+    font-size: 5vw;
+    width: 40vw;
+}
+.aboutsubtext {
+    font-size: 2vw;
+    width: 42vw;
+}
+.btn {
+    width: 14vw;
+}
+.btn h1{
+    font-size: 1.4vw;
+}
+.hero{
+    padding-top: 36vh;
+}
+.herotext {
+    font-size: max(5vw, 32px);
+}
+.herosubtext{
+    font-size: max(2vw, 14px);
+    width: 70vw;
+}
+.registersubtext{
+    font-size: max(2vw, 14px);
+    width: 70vw;
+}
+.comp h1{
+    font-size: max(2vw, 16px);
+}
+.btn{
+    width: max(4vw, 98px);
+}
+}
