@@ -12,7 +12,11 @@
     width: auto;
     margin: auto;
 }
+.hero{
+    height: 72vh;
+}
 .lft{
+    display: none;
     height: 26vh;
     width: auto;
     position: absolute;
@@ -63,10 +67,7 @@
     width: 14vw;
 }
 .btn h1{
-    font-size: 1.4vw;
-}
-.hero{
-    padding-top: 36vh;
+    font-size: 2vw;
 }
 .herotext {
     font-size: max(5vw, 32px);
