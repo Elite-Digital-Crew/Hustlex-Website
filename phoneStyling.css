@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1024px) {
   html {
-    max-width: 100vw;
-    scroll-behavior: smooth;
+    max-width: 100%;
     overflow-x: hidden;
   }
   .navbar {
@@ -31,13 +30,18 @@
     justify-content: space-evenly;
   }
 
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   /* hero styling */
   .home {
     height: 72;
-    padding: 32px;
+    width: calc(100vw - 32px);
+    padding: 0px 32px;
   }
   .home h1 {
-    font-size: 60px;
+    font-size: min(60px, 12vw);
     letter-spacing: -1.65px;
     line-height: 55px;
     text-align: left;
@@ -48,39 +52,57 @@
     line-height: 22px;
   }
   .homeimage {
-    width: auto;
-    height: 50vw;
+    display: none;
   }
 
   /* features STYLING */
   .subhero {
     height: min(52vh, 720px);
+    letter-spacing: 1px;
     padding: 60px 90px;
   }
   .subhero h1 {
-    font-size: 52px;
-    line-height: 75px;
-    width: 92%;
+    font-size: min(42px, 8vw);
+    width: 42vw;
   }
   .subhero p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: min(14px, 2vw);
+    width: 100%;
+    line-height: normal;
   }
   .subhero img {
     height: auto;
     width: 50vw;
+  }
+  /* register styling */
+  .register {
+    height: 100vh;
+  }
+  .registertext {
+    font-size: min(6vw, 52px);
+  }
+  .registersubtext {
+    font-size: min(3vw, 24px);
+    width: 72vw;
+  }
+  .form {
+    height: 72vh;
+    width: 92vw;
   }
 
   /* button  */
   .btn h3,
   .learnmorebtn {
     font-weight: 600;
-    font-size: min(2vw, 10px);
+    font-size: min(4vw, 10px);
     text-decoration: none;
+  }
+  .btn {
+    width: 24vw;
   }
 
   /* footer  */
   .comp h1 {
-    font-size: min(2vw, 12px);
+    font-size: min(4vw, 14px);
   }
 }
