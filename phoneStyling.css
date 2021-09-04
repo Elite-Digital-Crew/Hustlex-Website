@@ -105,4 +105,18 @@
   .comp h1 {
     font-size: min(4vw, 14px);
   }
+
+  .faq {
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    padding: 0%;
+    width: 90vw;
+  }
+  .accordion a {
+    width: auto;
+  }
 }
