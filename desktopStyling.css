@@ -189,7 +189,7 @@ html {
 }
 .subhero img {
   height: auto;
-  width: min(50%, 720px);
+  width: min(50%, 500px);
 }
 
 /* register styling */
