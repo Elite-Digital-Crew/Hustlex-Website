@@ -108,12 +108,11 @@ html {
   align-items: center;
 }
 .homeimage {
-  display: none;
   width: auto;
   height: 50vh;
 }
 .homeimagephone {
-  position: absolute;
+  display: none;
   width: 100vw;
   height: auto;
 }
