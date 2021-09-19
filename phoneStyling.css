@@ -57,7 +57,7 @@
   .homeimagephone {
     position: absolute;
     top: 2vh
-    display: block;
+    display: none;
     z-index: -5;
     opacity: 0.8;
   }
