@@ -108,6 +108,7 @@ html {
   align-items: center;
 }
 .homeimage {
+  display: none;
   width: auto;
   height: 50vh;
 }

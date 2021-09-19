@@ -55,10 +55,15 @@
     display: none;
   }
   .homeimagephone {
+    display: block;
     position: absolute;
-    top: 2vh;
     z-index: -5;
     opacity: 0.8;
+    object-fit: cover;
+    height: 82vh;
+    width: 100vw;
+    left: 0%;
+    opacity: 0.6;
   }
 
   /* features STYLING */
