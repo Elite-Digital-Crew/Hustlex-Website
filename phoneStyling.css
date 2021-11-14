@@ -70,18 +70,18 @@
 
   /* features STYLING */
   .subhero {
-    height: min(52vh, 720px);
-    letter-spacing: 1px;
+    height: min(52vh, 500px);
     padding: 60px 90px;
   }
   .subhero h1 {
-    font-size: min(42px, 8vw);
+    font-size: min(42px, 7vw);
     width: 42vw;
   }
   .subhero p {
     font-size: min(14px, 2vw);
     width: 100%;
     line-height: normal;
+    font-weight: 500;
   }
   .subhero img {
     height: auto;

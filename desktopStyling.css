@@ -69,9 +69,12 @@ html {
 
 /* home styling */
 .home {
-  height: 82vh;
-  width: 100vw;
+  margin: auto;
+  height: 72vh;
+  width: min(100vw, 1700px);
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 120px;
 }
 .homeleft {
