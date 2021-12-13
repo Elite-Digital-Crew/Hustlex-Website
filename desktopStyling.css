@@ -4,8 +4,12 @@
   font-family: "Poppins", sans-serif;
 }
 @font-face {
-  font-family: Akira;
-  src: url("Akira.otf");
+  font-family: Integral;
+  src: url("IntegralCF-ExtraBold.otf");
+}
+@font-face {
+  font-family: Integral-Bold;
+  src: url("IntegralCF-Bold.otf");
 }
 html {
   max-width: 100%;
@@ -15,35 +19,45 @@ html {
 
 /* navbar styling */
 
+body {
+  background-color: #fcfcfc;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   height: 8vh;
   width: 100vw;
 }
 
 .nav-list {
-  width: 80%;
+  width: min(80%, 1920px);
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  width: 20vw;
+  width: min(12vw, 120px);
+  height: 100%;
+  /* background-color: #dfdfdf; */
 }
 
 .nav-list li a {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   font-size: min(1.2vw, 16px);
 }
 .nav-list li a:hover {
-  color: #60b2fc;
+  color: #fa63ce;
 }
 
 .burger {
@@ -69,32 +83,35 @@ html {
 
 /* home styling */
 .home {
-  margin: auto;
-  height: 72vh;
-  width: min(100vw, 1700px);
+  width: 100vw;
+  height: 82vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px;
 }
-.homeleft {
+.content {
+  margin: auto;
   display: flex;
+  /* background-color: antiquewhite; */
+  height: 32%;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
-.leftcontent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
 .home h1 {
   font-weight: 800;
-  font-size: 4vw;
-  width: 72%;
+  font-family: Integral;
+  font-size: min(5.4vw, 72px);
+  letter-spacing: 3.5px;
+  color: #232730;
+  text-align: center;
 }
 .home p {
   width: 72%;
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  font-size: min(1.8vw, 24px);
+  text-align: center;
 }
 .learnmorebtn {
   font-weight: 400;
@@ -104,73 +121,19 @@ html {
   text-decoration: none;
   margin-left: 42px;
 }
-.homeright {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.homeimage {
-  width: auto;
-  height: 50vh;
-}
-.homeimagephone {
-  display: none;
-  width: 100vw;
-  height: auto;
-}
 .homebuttons {
   width: 72%;
   margin-top: 4vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-/* features styling */
-.features {
-  height: min(72vh, 900px);
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.features h1 {
-  font-weight: 800;
-  font-size: 4vw;
-  width: 72%;
-  text-align: center;
-}
-.features p {
-  width: 72%;
-  text-align: center;
-}
-.cards {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.featurecard {
-  width: min(18%, 240px);
-  height: min(25vw, 300px);
-  background-color: azure;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
-.featurecard h2 {
-  font-weight: 800;
-  font-size: min(2vw, 24px);
-}
-.featurecard h3 {
-  font-size: min(1vw, 14px);
-  font-weight: 400;
-  width: 92%;
-  text-align: center;
+.homeimg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 90vh;
 }
 
 /* sub hero styling */
@@ -184,16 +147,47 @@ html {
 .alt {
   background-color: #fafafa;
 }
+.subheroleft {
+  display: flex;
+  height: 32%;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .subhero h1 {
-  font-size: min(4vw, 72px);
-  letter-spacing: -2px;
-  opacity: 0.9;
+  z-index: 2;
+  font-family: Integral-Bold;
+  line-height: 90%;
+  font-size: min(4.2vw, 64px);
+  letter-spacing: 4px;
   width: min(92%, 720px);
+  color: #181a20;
+}
+.subhero h3 {
+  position: absolute;
+  z-index: s1;
+  margin-top: 3px;
+  margin-left: 3px;
+  font-family: Integral-Bold;
+  line-height: 90%;
+  font-size: min(4.2vw, 64px);
+  letter-spacing: 4px;
+  color: #ffffff;
+  width: min(92%, 720px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fa63ce;
+}
+.subhero h2 {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: normal;
+  font-family: "Outfit", sans-serif;
+  max-width: 420px;
 }
 .subhero p {
-  font-size: 20px;
-  line-height: 28px;
-  max-width: 630px;
+  font-size: min(1.2vw, 16px);
+  font-weight: 300;
+  font-family: "Outfit", sans-serif;
+  max-width: 420px;
 }
 .subhero img {
   height: auto;
@@ -230,22 +224,45 @@ html {
   height: 72vh;
   width: min(72vw, 600px);
 }
+
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4vh;
-  width: min(14vw, 130px);
-  border-radius: 5px;
-  background-color: #60b2fc;
-  border: none;
+  height: 5.4vh;
+  width: min(20vw, 200px);
+  border-radius: 14px;
+  background-color: #30343c;
   text-decoration: none;
 }
+.btn :hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.4vh;
+  width: min(20vw, 200px);
+  border-radius: 14px;
+  text-decoration: none;
+  background-color: #fa63ce;
+}
 
-.btn h3 {
-  font-weight: 600;
-  color: #ffffff;
-  font-size: min(1vw, 14px);
+.btn div {
+  position: absolute;
+  z-index: -1;
+  margin-top: 6px;
+  margin-left: 7.2px;
+  height: 5.4vh;
+  width: min(20vw, 200px);
+  border-radius: 14px;
+  outline-color: #fa63ce;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.btntxt {
+  font-weight: 700;
+  color: #fcfcfc;
+  font-size: min(1.2vw, 14px);
   text-decoration: none;
 }
 
@@ -283,6 +300,13 @@ html {
   align-items: center;
   border-top: 3px solid;
   border-color: #60b2fc;
+}
+.lowfootercointainer h3 {
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1vw;
+  color: #ffffff;
 }
 .lowfootercointainer img {
   height: 4vh;
