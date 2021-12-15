@@ -287,8 +287,37 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80%;
-  width: 92vw;
+  width: min(92vw, 1920px);
   margin: auto;
+}
+.about {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footsub {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #fa63ce; */
+}
+.about h1 {
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: min(1.4vw, 20px);
+  color: #fcfcfc;
+}
+.about p {
+  margin-top: 2px;
+  font-family: Outfit;
+  font-weight: 300;
+  font-size: min(1vw, 12px);
+  color: #fcfcfc;
+  width: min(92%, 270px);
 }
 
 .lowfootercointainer {
@@ -299,17 +328,22 @@ body {
   justify-content: space-between;
   align-items: center;
   border-top: 3px solid;
-  border-color: #60b2fc;
+  border-color: #fa63ce;
 }
 .lowfootercointainer h3 {
   font-family: Outfit;
   font-style: normal;
   font-weight: normal;
-  font-size: 1vw;
+  font-size: min(1.2vw, 16px);
   color: #ffffff;
 }
 .lowfootercointainer img {
   height: 4vh;
+}
+.logosm {
+  height: 8vh;
+  width: 8vh;
+  margin-bottom: 4vh;
 }
 .comp {
   display: flex;
@@ -317,12 +351,9 @@ body {
   justify-content: space-between;
 }
 .footertext {
-  color: #60b2fc;
-}
-.social {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  font-family: Integral-Bold;
+  color: #ffffff;
+  letter-spacing: 2px;
 }
 .linkstext {
   margin: 1vh;
@@ -331,6 +362,17 @@ body {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
+}
+.comp :hover {
+  color: #ff97e1;
+}
+.footsub p {
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: min(1vw, 14px);
+  color: #ffffff;
+  width: 72%;
+  margin: 2vh 0;
 }
 
 /* faq styling */
